@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area of Rectangle</title>
+</head>
+
+<body>
+    <h2>Area of Rectangle</h2>
+    <span id="length">Length</span>
+    <br><br>
+    <span id="width">width</span>
+    <br>
+    <p id="result"></p>
+    <script>
+        let length = 5;
+        let width = 4;
+
+        document.getElementById('length').innerHTML = "Length =" + length;
+        document.getElementById('width').innerHTML = "width =" + width;
+
+        let area = length * width;
+        let result;
+        document.getElementById('result').innerHTML = "Area of rectangle = " + area
+    </script>
+
+</body>
+
+</html>

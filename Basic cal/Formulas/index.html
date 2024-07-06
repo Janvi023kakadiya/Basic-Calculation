@@ -1,0 +1,66 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formula</title>
+    </head>
+
+    <body>
+        <p id="a"></p>
+        <p id="b"></p>
+        <p id="c"></p>
+        <p id="result"></p>
+        <p id="result2"></p>
+        <p id="result3"></p>
+        <p id="result4"></p>
+        <p id="result5"></p>
+
+        <script>
+            let a = 3;
+            let b = 6;
+            let c = 9;
+
+            document.getElementById('a').innerHTML = "A = " + a;
+            document.getElementById('b').innerHTML = "B = " + b;
+            document.getElementById('c').innerHTML = "C = " + c;
+
+            // (a² - b²)//
+            let result = (a - b) * (a + b);
+            document.getElementById('result').innerHTML = "Result of (a² – b²) = " + result;
+
+            // (a - b)²//
+            let a_squared = a * a;
+            let b_squared = b * b;
+            let two_ab = 2 * a * b;
+            let result2 = a_squared - two_ab + b_squared;
+
+            document.getElementById('result2').innerHTML = " Result of (a - b)² = " + a_squared + " - 2*" + a + "*" + b + " + " + b_squared + " = " + result2;
+
+            // (a + b + c)²//
+            let c_squared = c * c;
+            let two_ac = 2 * a * c;
+            let two_bc = 2 * b * c;
+            let result3 = a_squared + b_squared + c_squared + two_ab + two_ac + two_bc;
+
+            document.getElementById('result3').innerHTML = " Result of (a+b+c)²  = " + a_squared + " + " + b_squared + " + " + c_squared + " + 2*" + a + "*" + b + " + 2*" + a + "*" + c + " + 2*" + b + "*" + c + " = " + result3;
+
+            // (a - b - c)²//
+            let result4 = a_squared + b_squared + c_squared - two_ab - two_ac + two_bc;
+
+            document.getElementById('result4').innerHTML = " Result of (a-b-c)² = " + a_squared + " + " + b_squared + " + " + c_squared + " - 2*" + a + "*" + b + " - 2*" + a + "*" + c + " + 2*" + b + "*" + c + " = " + result4;
+
+            //  (a - b)³//
+            let a_cubed = a * a * a;
+            let b_cubed = b * b * b;
+            let three_a_squared_b = 3 * a * a * b;
+            let three_ab_squared = 3 * a * b * b;
+            let result5 = a_cubed - three_a_squared_b + three_ab_squared - b_cubed;
+
+            document.getElementById('result5').innerHTML = " Result of (a-b)³ = " + a_cubed + " - 3*" + a + "²*" + b + " + 3*" + a + "*" + b + "² - " + b_cubed + " = " + result5;
+
+        </script>
+    </body>
+
+    </html>

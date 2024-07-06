@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+</head>
+<body>
+
+    <p id="c"></p>
+    <p id="fahrenheitResult"></p>
+    <p id="f"></p>
+    <p id="celsiusResult"></p>
+
+    <script>
+        let c = 34;
+        let f = 101;
+
+        // Celsius to Fahrenheit
+        let fahrenheit = (c * 9 / 5) + 32;
+        document.getElementById('c').innerHTML = "Celsius: " + c + "°C";
+        document.getElementById('fahrenheitResult').innerHTML = c+ "°C is " + fahrenheit + "°F";
+
+        //  Fahrenheit to Celsius
+        let celsius = (f - 32) * 5 / 9;
+        document.getElementById('f').innerHTML = "Fahrenheit: " + f + "°F";
+        document.getElementById('celsiusResult').innerHTML = f + "°F is " + celsius+ "°C";
+    </script>
+</body>
+</html>
+
